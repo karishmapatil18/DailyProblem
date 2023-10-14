@@ -1,0 +1,19 @@
+/*Input:
+n = 3
+arr[] = {3 2 1}
+Output: 6
+
+*/
+
+//User function Template for javascript
+
+class Solution {
+  sumElement(arr,n) {
+      let count = 0;
+      for(let i = 0 ;i<=n-1 ; i++){
+          
+          count = count + arr[i];
+      }
+      return count ;
+  }
+}

@@ -1,0 +1,38 @@
+
+
+
+/*Geeksforgeeks
+Input:
+sizeOfArray = 6
+arr[] = {1, 2, 3, 4, 5}
+element = 90
+Output: 1 2 3 4 5 90
+Explanation: After inserting 90 at the
+end, we have array elements as 
+1 2 3 4 5 90.
+
+*/ 
+
+
+
+
+class Insert
+{
+    
+    public void insertAtEnd(int arr[],int sizeOfArray,int element)
+    {
+        int a = sizeOfArray-1;
+        arr[a] = element;
+    }
+}
+
+//JS
+class Solution 
+{
+    insertAtEnd(arr,sizeOfArray,element)
+    {   
+       
+       let a = sizeOfArray-1;
+       arr[a] = element
+    }
+}
