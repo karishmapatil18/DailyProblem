@@ -10,5 +10,16 @@ function distinct(arr){
     for(let ele of arr){
       let key = ele;//2
 
+      if(map.has(key)){
+        let count = map.get(key)+1;
+        map.set(key,count);
+      }
+      else 
+      {
+          map.set(key,1);
+      }
+     
+
+    }
     console.log(map)
 }
