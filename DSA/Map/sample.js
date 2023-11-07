@@ -1,25 +1,25 @@
-//Count distinct element in array
+//Group the anagram in array.
 
-let arr = [2,14,7,2,2,14,8,8,9]
-distinct(arr);
-
-function distinct(arr){
+let arr = ["triangle","adfgs","dsfga","abc","cab","bca"];
+anagram(arr);
+function anagram(arr){
     let map = new Map();
-    
+    for(let ele of arr)//abc
+    {
+      
+        let key = ele.split("").sort().join("")//abc
 
-    for(let ele of arr){
-      let key = ele;//2
+        if(map.has(key)) {
+            let temp = [];
+            temp = map.get(key);
+            temp.push(ele);
+            map.set(key,temp)
+        }
+        else{
+            map.set(key,[ele]);
+        }
 
-      if(map.has(key)){
-        let count = map.get(key)+1;
-        map.set(key,count);
-      }
-      else 
-      {
-          map.set(key,1);
-      }
-     
 
     }
-    console.log(map)
+    console.log(map);
 }
