@@ -78,5 +78,20 @@ class list {
         current.next = newnode ;
 
     }
+
+    removelast(){
+        const newnode = new Node();
+
+        if(this.head == null){
+            return "Linklist is empty"
+        }
+        let current = this.head.next
+
+        while(current.next != null){
+            current=current.next
+        }
+
+        
+    }
 }
 
